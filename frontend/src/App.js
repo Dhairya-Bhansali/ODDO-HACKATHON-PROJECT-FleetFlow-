@@ -2,7 +2,8 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import axios from 'axios';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
-axios.defaults.baseURL = 'http://127.0.0.1:5000';
+// connect frontend to Render backend
+axios.defaults.baseURL = 'https://fleetflow-backend-ryxg.onrender.com';
 
 // ─── jsPDF loader ─────────────────────────────────────────────────────────────
 const loadJsPDF = () => new Promise((resolve) => {
